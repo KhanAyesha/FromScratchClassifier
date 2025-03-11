@@ -1,0 +1,8 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.8  # Uses a Python 3.8 Docker image
+    steps:
+      - checkout  # Pulls the latest code from GitHub
+      - run: echo "Hello, CircleCI!"  # Runs a simple command
